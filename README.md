@@ -1,113 +1,47 @@
-# 💰 Finance Analytics Dashboard | Power BI
+# 💳 Finance Executive Dashboard | Power BI
 
-An interactive Business Intelligence dashboard built using **Microsoft Power BI** to analyze financial transactions, customer behavior, account information, and product performance.
+## 📌 Project Overview
 
----
+This project is an interactive **Finance Executive Dashboard** built using **Microsoft Power BI**. It provides insights into financial transactions, customer behavior, account balances, product categories, and regional performance.
 
-# 📊 Project Overview
-
-This project analyzes a banking/finance dataset and transforms raw data into meaningful business insights using Power BI.
-
-The dashboard is divided into three interactive pages:
-
-- 📈 Executive Dashboard
-- 💳 Transaction Analysis
-- 👥 Customer Analysis
-
-Users can explore transaction trends, customer distribution, account performance, product categories, and regional transaction analysis through interactive visuals and slicers.
+The dashboard enables users to analyze transaction trends, customer information, account types, and business performance through interactive visualizations and slicers.
 
 ---
 
-# 🛠️ Tools & Technologies
+## 📊 Dashboard Preview
 
-- Microsoft Power BI
-- Power Query
-- DAX (Data Analysis Expressions)
-- Data Modeling
-- Microsoft Excel
-- Kaggle Dataset
+### 🏠 Dashboard 1 – Executive Dashboard
 
----
+![Dashboard 1](Dashboard.1.png)
 
-# 📂 Dataset
-
-**Source:** Kaggle Banking/Finance Dataset
-
-The project follows a **Star Schema** data model consisting of one Fact table and multiple Dimension tables.
-
-### Fact Table
-- FactTransaction
-
-### Dimension Tables
-- DimCustomer
-- DimAccount
-- DimProduct
-- DimProductCategory
-- DimProductSubCategory
-
-The dataset contains:
-
-- Customer Details
-- Account Information
-- Product Categories
-- Product Subcategories
-- Transaction Records
-- Transaction Types
-- Transaction Channels
-- Registration Dates
-- Geographic Regions
-
----
-
-# 📊 Dashboard 1 – Executive Dashboard
-
-This page provides a quick overview of important business KPIs.
-
-### KPIs
-
+**Highlights**
 - Total Accounts
 - Total Transaction Amount
 - Total Transactions
 - Total Customers
-
-### Visuals
-
 - Monthly & Yearly Transaction Trend
-- Year Filter (Slicer)
-
-### Key Insight
-
-Provides a quick summary of overall business performance.
-
----
-
-# 📊 Dashboard 2 – Transaction Analysis
-
-This page focuses on transaction performance across different dimensions.
-
-### Visuals
-
-- Transaction Amount by Product Category & Subcategory
-- Transaction Count by Transaction Type
-- Transaction Amount by Channel
-- Monthly Registration Trend
 - Year Filter
 
-### Key Insights
+---
 
-- Compare transaction amount across product categories.
-- Analyze contribution of each product subcategory.
-- Compare transaction channels (ATM, Mobile, Web).
-- Identify monthly transaction trends.
+### 📈 Dashboard 2 – Transaction Analysis
+
+![Dashboard 2](Dashboard.2.png)
+
+**Highlights**
+- Transaction Amount by Product Category & Subcategory
+- Transaction Amount by Channel (ATM, Web, Mobile)
+- Transaction Type Analysis (Credit vs Debit)
+- Registration Trend by Month & Year
+- Year Filter
 
 ---
 
-# 📊 Dashboard 3 – Customer Analysis
+### 👥 Dashboard 3 – Customer Analysis Dashboard
 
-This page analyzes customer behavior and account information.
+![Dashboard 3](Dashboard.3.png)
 
-### Visuals
-
+**Highlights**
 - Customer Distribution by Gender
 - Balance by Account Type
 - Top 5 Customers
@@ -115,98 +49,101 @@ This page analyzes customer behavior and account information.
 - Transaction Amount by Account Type
 - Year, Quarter & Month Filter
 
-### Key Insights
+---
 
-- Analyze customer demographics.
-- Compare balances across account types.
-- Identify highest-value customers.
-- Analyze regional transaction distribution.
-- Explore customer transactions interactively.
+# 📂 Dataset
+
+The dataset used in this project was obtained from **Kaggle** and includes multiple related tables such as:
+
+- FactTransaction
+- DimCustomer
+- DimAccount
+- DimProduct
+- DimProductCategory
+- DimProductSubCategory
+
+The data model follows a **Star Schema**, where the fact table stores transaction records and the dimension tables provide descriptive information.
 
 ---
 
-# 📸 Dashboard Screenshots
+# 🛠 Tools & Technologies
 
-## Dashboard 1 – Executive Dashboard
-
-![Dashboard 1](Images/Dashboard.1.png)
-
----
-
-## Dashboard 2 – Transaction Analysis
-
-![Dashboard 2](Images/Dashboard.2.png)
-
----
-
-## Dashboard 3 – Customer Analysis
-
-![Dashboard 3](Images/Dashboard.3.png)
+- Microsoft Power BI Desktop
+- Power Query
+- DAX
+- Data Modeling
+- Interactive Slicers
+- Maps
+- Line Charts
+- Column Charts
+- Bar Charts
+- Pie Chart
+- Donut Chart
+- Card Visuals
 
 ---
 
-# 📈 Business Insights
+# 📈 Key Insights
 
-- Total transaction amount exceeded **5 Million**.
-- More than **10,000 transactions** were analyzed.
-- Mobile channel generated the highest transaction amount.
-- Product categories contribute differently to total transactions.
-- Savings and Checking accounts hold the highest balances.
+### Executive Dashboard
+- Displays total transaction amount, total customers, total accounts, and total transactions.
+- Shows transaction trends over time.
+- Enables year-wise filtering.
+
+### Transaction Analysis
+- Mobile transactions contribute the highest transaction amount.
+- Product categories and subcategories contribute differently to overall revenue.
+- Debit transactions occur more frequently than credit transactions.
+- Registration trends can be analyzed across different years.
+
+### Customer Analysis
 - Female customers slightly outnumber male customers.
-- Top customers contribute a significant portion of total transaction value.
-- Transaction activity varies across different regions.
+- Savings accounts hold the highest balance.
+- Displays the top 5 customers based on transaction amount.
+- Regional map visualizes transaction distribution.
+- Account-type-wise transaction distribution is shown using a pie chart.
 
 ---
 
-# 📚 Learning Outcomes
-
-This project helped me learn:
-
-- Data Cleaning using Power Query
-- Data Modeling (Star Schema)
-- Creating DAX Measures
-- Interactive Dashboard Design
-- KPI Cards
-- Maps & Geographical Analysis
-- Business Intelligence Reporting
-- Data Visualization Best Practices
-
----
-
-# 📁 Project Structure
+# 📁 Repository Structure
 
 ```
-Finance-Analytics-Dashboard
+Finance-Executive-Dashboard/
 │
-├── README.md
-├── Finance Dashboard.pbix
-├── Finance Dataset.xlsx
-│
-└── Images
-    ├── Dashboard.1.png
-    ├── Dashboard.2.png
-    └── Dashboard.3.png
+├── finance executive dashboard.pbix
+├── Dashboard.1.png
+├── Dashboard.2.png
+├── Dashboard.3.png
+└── README.md
 ```
 
 ---
 
-# 🚀 How to Use
+# 🚀 Features
 
-1. Clone this repository.
-2. Open **Finance Dashboard.pbix** in Microsoft Power BI Desktop.
-3. Refresh the dataset if required.
-4. Explore the dashboards using slicers and filters.
-
----
-
-# 👩‍💻 Author
-
-**Tanvi Pandey**
-
-🎓 BCA (Data Science & Artificial Intelligence)
-
-📊 Aspiring Data Analyst
+- Interactive dashboards
+- Cross-filtering visuals
+- Clean UI design
+- Dynamic slicers
+- Business KPI Cards
+- Customer Insights
+- Transaction Analysis
+- Geographic Analysis
 
 ---
 
-⭐ If you found this project helpful, consider giving it a Star!
+# 🎯 Skills Demonstrated
+
+- Data Cleaning
+- Data Transformation
+- Data Modeling
+- DAX Measures
+- Dashboard Design
+- Data Visualization
+- Business Intelligence
+- Power Query
+- Power BI
+
+---
+
+## ⭐ If you like this project, don't forget to star this repository.
